@@ -1,12 +1,9 @@
-*.iml
 .kotlin
 .gradle
 **/build/
 xcuserdata
 !src/**/build/
-local.properties
 .idea
-.DS_Store
 captures
 .externalNativeBuild
 .cxx
@@ -16,4 +13,73 @@ captures
 !*.xcodeproj/project.xcworkspace/
 !*.xcworkspace/contents.xcworkspacedata
 **/xcshareddata/WorkspaceSettings.xcsettings
+
+
+# --- [ Kotlin/JVM/Gradle ] ---
+.gradle/
+build/
+**/build/
+out/
+/captures
+.kotlin/
+kotlin-js-store/
+
+# --- [ Android ] ---
+*.apk
+*.aar
+*.ap_
+*.aab
+local.properties
+.navigation/
+assetPackDownloadFinishedPropertyName
+incremental/
+intermediates/
+outputs/
+reports/
+tmp/
+
+# --- [ IntelliJ/Android Studio ] ---
+.idea/modules.xml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries/
+.idea/shelf/
+.idea/caches/
+*.iml
+*.iws
+
+# --- [ iOS / Xcode / Kotlin Multiplatform ] ---
+.DS_Store
+*.swp
+*.lock
+
+# CocoaPods
+/iosApp/Pods/
+/iosApp/.symlinks/
+/iosApp/Podfile.lock
+
+# Xcode user data
+**/xcuserdata/
+**/DerivedData/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+
+# --- [ Desktop (JVM) ] ---
+# Se você usa o plugin de distribuição desktop
+/composeApp/build/compose-binaries/
+
+# --- [ Web (Wasm/JS) ] ---
+.pnpm-debug.log*
 node_modules/
+package-lock.json
+
+# --- [ Secrets & Configs ] ---
+*.keystore
+*.jks
+google-services.json
+GoogleService-Info.plist
